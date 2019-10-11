@@ -10,7 +10,7 @@
     array_multisort($productsInCart, SORT_ASC, $productsInCart2, SORT_ASC, $productsInCartOld);
 	//foreach($this->orderdetails['items'] as $item) {
     foreach($productsInCartOld as $item) {
-    //END: add 11.10.2019
+    //END: add 11.10.201900
 		$qtt = $item->product_quantity ;
 		$_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_category_id=' . $item->virtuemart_category_id . '&virtuemart_product_id=' . $item->virtuemart_product_id, FALSE);
 		?>
