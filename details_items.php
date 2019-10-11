@@ -1,4 +1,3 @@
-
 <?php  // add 11.10.2019
     $productsInCart = array();
     $productsInCart2 = array();
@@ -12,4 +11,7 @@
 	//foreach($this->orderdetails['items'] as $item) {
     foreach($productsInCartOld as $item) {
     //END: add 11.10.2019
+		$qtt = $item->product_quantity ;
+		$_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_category_id=' . $item->virtuemart_category_id . '&virtuemart_product_id=' . $item->virtuemart_product_id, FALSE);
+		?>
 		
